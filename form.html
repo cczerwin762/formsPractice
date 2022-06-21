@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body>
+    <script src="app.js"></script>
     <h1>New User Form </h1>
     <form>
       <label for="accountType"> Account Type: </label>
@@ -15,21 +16,23 @@
         <option value="faculty">Other Faculty</option>
       </select><br><br>
       <label for="username">Username: </label>
-      <input type="text" id="username" name="username" placeholder="johnsmith123"><br><br>
+      <input type="text" required id="username" name="username" placeholder="johnsmith123"><br><br>
       <label for="password">Password: </label>
-      <input type="password" id="password" name="password"><br><br>
+      <input type="password" required id="password" name="password"><br><br>
+      <label for="vpassword">Verfiy Password: </label>
+      <input type="password" required id="vpassword" name="vpassword" onchange="verify()"><br><br>
       <label for="sex"> Sex: </label>
-      <input type="radio" name="sex" id="male" value="Male">
+      <input type="radio" required name="sex" id="male" value="Male">
       <label for="male">Male</label>
       <input type="radio" name="sex" id="female" value="Female">
       <label for="female">Female</label>
       <input type="radio" name="sex" id="other" value="Other">
       <label for="other">Other</label><br><br>
       <label for="birthDate">Birth Date: </label>
-      <input type="date" id="birthDate" name="birthDate"><br><br>
+      <input type="date" required id="birthDate" name="birthDate"><br><br>
       <input type="checkbox" id="emailNotifications" name="emailNotifications" checked="true" value="emailNotifications"
       <label for="emailNotifications">Check for Email Notifications</label><br><br>
-      <button type="button">Submit!</button>
+      <input type="submit" value="Submit!" onclick="return verify();">
     </form>
   </body>
 </html>
