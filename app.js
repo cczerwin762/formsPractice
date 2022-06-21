@@ -9,6 +9,7 @@ function verify(){
   }
   else{
     alert("Hello " + uname +"! Thank you for creating an account." )
+    return true;
   }
 }
 console.log("Start \n");
