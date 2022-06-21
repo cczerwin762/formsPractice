@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>New User Form </h1>
+    <form>
+      <label for="accountType"> Account Type: </label>
+      <select id="accountType" name="accountType">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="potential new student">Potential New Student</option>
+        <option value="faculty">Other Faculty</option>
+      </select><br><br>
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" placeholder="johnsmith123"><br><br>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password"><br><br>
+      <label for="sex"> Sex: </label>
+      <input type="radio" name="sex" id="male" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" name="sex" id="female" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" name="sex" id="other" value="Other">
+      <label for="other">Other</label><br><br>
+      <label for="birthDate">Birth Date: </label>
+      <input type="date" id="birthDate" name="birthDate"><br><br>
+      <input type="checkbox" id="emailNotifications" name="emailNotifications" checked="true" value="emailNotifications"
+      <label for="emailNotifications">Check for Email Notifications</label><br><br>
+      <button type="button">Submit!</button>
+    </form>
+  </body>
+</html>
